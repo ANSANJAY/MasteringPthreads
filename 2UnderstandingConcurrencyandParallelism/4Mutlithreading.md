@@ -74,12 +74,3 @@
 - **Transition**: Context Switching in Multi-Threading, Switching of Well-Diggers in Analogy
 - **Work to Accomplish**: Task assigned to Threads in Multi-Threading, 100ft Well in Analogy
 
----
-
-For further context and details, each of these topics will be covered in-depth in future lectures.
-
----
-
-Feel free to refer back to these notes when preparing for interviews on Multi-Threading and related topics. Good luck! 🍀
-
----
