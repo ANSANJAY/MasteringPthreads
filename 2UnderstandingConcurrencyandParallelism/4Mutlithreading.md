@@ -1,5 +1,60 @@
+# 📝 Multi-Threading  Revision Notes
 
-# 📝 Multi-Threading Interview Revision Notes
+```
+      Concurrency                  Parallelism                 Singularism
+---------------------------------------------------------------------------------
+Time 1:
+
+Digger 1:  ⛏🟩🟩                Digger 1: ⛏🟦🟦🟦           Digger 1: ⛏🟧🟧🟧🟧🟧
+Digger 2:  🟨🟨🟨🟨               Digger 2:  🟨🟨🟨🟨🟨🟨         Digger 2:  
+Digger 3:  🟥🟥🟥🟥🟥              Digger 3:  🟥🟥🟥🟥🟥🟧🟧       Digger 3:  
+
+Well:      [ 5ft ]               Well 1:   [10ft]             Well:      [10ft]
+           [10ft ]               Well 2:   [10ft]             (Digger 1 finished)
+           [ 7ft ]               Well 3:   [12ft] 
+
+---------------------------------------------------------------------------------
+Time 2:
+
+Digger 1:  🟩🟩🟩🟩🟩              Digger 1: 🟦🟦🟦🟦🟦🟦         Digger 1:  
+Digger 2:  ⛏🟨🟨🟨               Digger 2: ⛏🟨🟨🟨🟨🟨🟧         Digger 2: ⛏🟦🟦🟦🟦🟦
+Digger 3:  🟥🟥🟥🟥🟥              Digger 3:  🟥🟥🟥🟥🟥🟧🟧       Digger 3:  
+
+Well:      [ 7ft ]               Well 1:   [12ft]             Well:      [ 5ft]
+           [⛏11ft]               Well 2:   [11ft]             (Digger 2 started)
+           [10ft ]               Well 3:   [12ft] 
+
+---------------------------------------------------------------------------------
+Legend:
+
+🟩, 🟨, 🟥: Different diggers
+⛏: Digger currently at work
+[ ]: Depth of well in feet
+🟦, 🟨, 🟥: Digger's progress
+
+```
+
+
+```
+       Concurrency        |       Parallelism       |       Singularism
+------------------------------------------------------------------------
+Digger 1:  ⛏             | Digger 1:  ⛏           | Digger 1:  ⛏ 
+Digger 2:                 | Digger 2:  ⛏           | Digger 2:  
+Digger 3:                 | Digger 3:  ⛏           | Digger 3:  
+                          |                         |  
+Well:      [ 3ft ]        | Well 1: [10ft]          | Well:      [10ft]
+           [ 7ft ]        | Well 2: [10ft]          |   
+           [ 5ft ]        | Well 3: [10ft]          |   
+                          |                         |  
+                          |                         |  
+Description: Multiple     | Description: Each       | Description: Only 
+diggers work on the same  | digger works on their   | one digger works on
+well, but one at a time.  | own well simultaneously.| the well, completing 
+They switch turns.        |                         | it before the next
+                          |                         | starts.
+
+```
+
 
 ## 📚 Table of Contents
 
