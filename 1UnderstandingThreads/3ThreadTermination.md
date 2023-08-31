@@ -1,5 +1,3 @@
-Certainly! Below is the detailed revision notes on the topic "Thread Termination," formatted in unrendered Markdown with emojis for easy understanding. You can use these notes to prepare for interviews.
-
 
 # Thread Termination in Multithreading 🧵🛑
 
@@ -79,7 +77,7 @@ pthread_cancel(thread_t2);
 1. Threads can be terminated in three primary ways: by running their function to completion, by invoking `pthread_exit()`, or through cancellation by another thread.
 2. Be mindful of these termination methods while designing multithreaded applications to avoid unexpected behaviors.
 
-# Thread Termination Interview Q&A 🧵🛑
+# Thread Termination  Q&A 🧵🛑
 
 ## Table of Contents 📚
 1. [What is Thread Termination?](#what-is-thread-termination-📝)
