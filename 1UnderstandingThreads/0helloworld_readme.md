@@ -105,6 +105,8 @@
 gcc hello_world.c -o hello_world -pthread
 ```
 
+![](./Screenshot%20from%202023-08-31%2020-06-20.png)
+
 ### Execution Behaviour 🏃‍♂️
 - The main thread will pause, allowing the child thread to run and print the input string every second.
   
