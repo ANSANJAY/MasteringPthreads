@@ -1,5 +1,5 @@
 
-# Threads in Programming: Detailed Interview Notes 📝
+# Threads in Programming: Detailed  Notes 📝
 
 ## Table of Contents
 1. [Introduction to Threads](#introduction-to-threads-🌟)
@@ -71,11 +71,11 @@
 
 ---
 
-These notes are prepared with 💖 by Anamika for interview revision.
+These notes are prepared with 💖 by Anamika for  revision.
 
 ---
 
-# Threads in Programming: Interview Q&A 📝
+# Threads in Programming:  Q&A 📝
 
 
 ## Table of Contents
@@ -139,6 +139,6 @@ These notes are prepared with 💖 by Anamika for interview revision.
 
 ---
 
-Prepared with 💖 by Anamika for interview revision.
+Prepared with 💖 by Anamika for  revision.
 
 
