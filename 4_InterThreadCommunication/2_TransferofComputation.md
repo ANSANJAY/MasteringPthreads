@@ -91,10 +91,5 @@ In this lecture, we go through a program example to illustrate the concept of **
 - The example perfectly maps the model of **Transfer of Computation** discussed earlier.
 - Function pointers are a common method for implementing this transfer.
 
-## Upcoming Assignment 📚✍️
-
-- An exercise will be provided to implement the transfer of computation using function pointers between two threads of the same process.
-
----
 
 These notes should provide a comprehensive understanding of how Transfer of Computation is implemented in code, useful for your interviews. Good luck! 🍀🌟
