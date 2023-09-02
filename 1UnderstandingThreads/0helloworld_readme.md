@@ -31,7 +31,7 @@
 ## Code Implementation 🛠
 
 ### Creating New Threads 🆕
-- User-defined function `ThreadOneCreate()` is used to create a new thread.
+- User-defined function `thread1_create()` is used to create a new thread.
 - Parent of this new thread would be the main thread.
 
 #### Thread Handle 🏷

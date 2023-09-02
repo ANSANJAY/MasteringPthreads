@@ -1,41 +1,31 @@
 # 📝 Multi-Threading  Revision Notes
 
 ```yaml
+      Concurrency                 |      Parallelism                |      Singularism                 Legend
+------------------------------------------------------------------------------------------             -----------------
+Description: Multiple diggers     | Description: Each digger works   | Description: Only one digger    🟩, 🟨, 🟥: Different diggers
+work on the same well, but        | on their own well simultaneously.| works on the well, completing    ⛏: Digger currently at work
+one at a time. They switch turns. |                                 | it before the next starts.        [ ]: Depth of well in feet
+------------------------------------------------------------------------------------------             🟦, 🟨, 🟥: Digger's progress
+Time 1:                                                                                        
+                                                                                                
+Digger 1:  ⛏🟩🟩                   | Digger 1: ⛏🟦🟦🟦                  | Digger 1: ⛏🟧🟧🟧🟧🟧                      
+Digger 2:  🟨🟨🟨🟨                 | Digger 2: ⛏🟨🟨🟨🟨🟨             | Digger 2:                                  
+Digger 3:  🟥🟥🟥🟥🟥               | Digger 3: ⛏🟥🟥🟥🟥🟥             | Digger 3:                                  
 
-      Concurrency                 |      Parallelism                |      Singularism
-------------------------------------------------------------------------------------------
-Description: Multiple diggers     | Description: Each digger works   | Description: Only one digger 
-work on the same well, but        | on their own well simultaneously.| works on the well, completing
-one at a time. They switch turns. |                                 | it before the next starts.
-------------------------------------------------------------------------------------------
-Time 1:
+Well:      [ 5ft ]                  | Well 1:   [10ft]                    | Well:      [10ft]                          
+           [10ft ]                  | Well 2:   [10ft]                    | (Digger 1 finished)                        
+           [ 7ft ]                  | Well 3:   [10ft]                    |                                          
+------------------------------------------------------------------------------------------                                    
+Time 2:                                                                                        
 
-Digger 1:  ⛏🟩🟩                   | Digger 1: ⛏🟦🟦🟦                  | Digger 1: ⛏🟧🟧🟧🟧🟧
-Digger 2:  🟨🟨🟨🟨                 | Digger 2: ⛏🟨🟨🟨🟨🟨             | Digger 2:  
-Digger 3:  🟥🟥🟥🟥🟥               | Digger 3: ⛏🟥🟥🟥🟥🟥             | Digger 3:  
+Digger 1:  🟩🟩🟩🟩🟩                 | Digger 1:⛏ 🟦🟦🟦🟦🟦🟦                | Digger 1:                                   
+Digger 2:  ⛏🟨🟨🟨                   | Digger 2: ⛏ 🟨🟨🟨🟨🟨🟨🟨             | Digger 2: ⛏🟦🟦🟦🟦🟦                        
+Digger 3:  🟥🟥🟥🟥🟥                 | Digger 3: ⛏ 🟥🟥🟥🟥🟥🟥🟥             | Digger 3:                                  
 
-Well:      [ 5ft ]                  | Well 1:   [10ft]                    | Well:      [10ft]
-           [10ft ]                  | Well 2:   [10ft]                    | (Digger 1 finished)
-           [ 7ft ]                  | Well 3:   [10ft]                    | 
-
-------------------------------------------------------------------------------------------
-Time 2:
-
-Digger 1:  🟩🟩🟩🟩🟩                 | Digger 1:⛏ 🟦🟦🟦🟦🟦🟦                | Digger 1:  
-Digger 2:  ⛏🟨🟨🟨                   | Digger 2: ⛏ 🟨🟨🟨🟨🟨🟨🟨             | Digger 2: ⛏🟦🟦🟦🟦🟦
-Digger 3:  🟥🟥🟥🟥🟥                 | Digger 3: ⛏ 🟥🟥🟥🟥🟥🟥🟥             | Digger 3:  
-
-Well:      [ 7ft ]                   | Well 1:   [12ft]                     | Well:      [ 5ft]
-           [⛏11ft]                   | Well 2:   [12ft]                     | (Digger 2 started)
-           [10ft ]                   | Well 3:   [12ft]                     | 
-
-------------------------------------------------------------------------------------------
-Legend:
-
-🟩, 🟨, 🟥: Different diggers
-⛏: Digger currently at work
-[ ]: Depth of well in feet
-🟦, 🟨, 🟥: Digger's progress
+Well:      [ 7ft ]                   | Well 1:   [12ft]                     | Well:      [ 5ft]                           
+           [⛏11ft]                   | Well 2:   [12ft]                     | (Digger 2 started)                          
+           [10ft ]                   | Well 3:   [12ft]                     |                                            
 
 ```
 
