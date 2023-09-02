@@ -28,11 +28,6 @@ This part of the lecture transitions from the concept of **Transfer of Computati
 ### Notification 📣
 
 - The activity where the Publisher **invokes the function** through the function pointer is termed as **Notification**.
-
-## Upcoming Topics 📋
-
-- The next section will delve deeper into **Notification Chain Communication Models**.
-- The focus will be on understanding and implementing this model to set up communication between threads of the same process.
   
 ## Key Takeaway 🗝️
 
@@ -40,8 +35,8 @@ This part of the lecture transitions from the concept of **Transfer of Computati
 
 ## Summary 📚
 
-- Publisher-Subscriber Model is a high-level architecture built on the concept of Transfer of Computation.
-- The Publisher generates data, the Subscriber processes it.
+The publisher-subscriber Model is a high-level architecture built on the concept of Transfer of Computation.
+- The Publisher generates data, and the Subscriber processes it.
 - The transfer of this computation logic is done through **Callback Registration**, and its usage through **Notification**.
 
 ---
