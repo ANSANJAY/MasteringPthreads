@@ -119,11 +119,7 @@ gcc hello_world.c -o hello_world -pthread
   
 ### Pause Function Importance 🛑
 - Removing the pause function from the main thread gives the child thread no chance to execute.
-  
-### Keeping Child Thread Alive 🤖
-- Techniques for allowing the main thread to terminate while keeping child threads running will be discussed later.
 
----
 
 
  
