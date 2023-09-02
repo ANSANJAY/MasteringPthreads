@@ -51,7 +51,7 @@ In this section, we'll summarize the concepts of concurrency and parallelism as 
 
 ---
 
-## Diagrams: Concurrency vs Parallelism 📊
+## Concurrency vs Parallelism 📊
 
 ### Concurrency Diagram 🔄
 - **Thread T1** executes on the same CPU.
@@ -61,15 +61,13 @@ In this section, we'll summarize the concepts of concurrency and parallelism as 
 ### Parallelism Diagram ⏩
 - **Thread T1** and **Thread T2** execute simultaneously on different CPUs.
 
-> **Visual Aids**: The diagrams illustrate how threads can either execute concurrently (interleaved on the same CPU) or in parallel (simultaneously on different CPUs).
-
 ---
 
 ## Key Takeaways 🗝
 
 1. **Concurrency** can happen whether threads belong to the same or different processes and whether their work is overlapping or not.
   
-2. **Parallelism** requires threads to be allocated different CPUs and to be given non-overlapping tasks.
+2. **Parallelism** requires threads to be allocated to different CPUs and to be given non-overlapping tasks.
 
 3. **Context-switching** is a characteristic feature of concurrent thread execution, whereas parallel execution has no need for context-switching.
 
@@ -77,8 +75,3 @@ In this section, we'll summarize the concepts of concurrency and parallelism as 
 
 > **Next Steps**: This concludes the theoretical foundation necessary for diving into more practical aspects of multithreading.
 
----
-
-For a deeper understanding, it's recommended to study diagrams and real-world examples that clearly illustrate these concepts. 🌐
-
----
