@@ -35,7 +35,7 @@
 - **1. System has 2 CPUs, and no other thread is present in the system other than these two threads**: The computation would be **Concurrent** because both threads need to compare their results to find the largest number, requiring synchronization.
 
 - **2. System has 1 CPU, and no other thread is present in the system other than these two threads**: Again, the computation would be **Concurrent** as they would share the same CPU and require synchronization to compare results.
-
+Now it don't matter how many CPUs system has,  if thread's work overlap with each other, they would undergo concurrent computation. Here, thread 1 would find the largest element in its array, and WAIT (see , here the thread has to coordinate) for thread 2 to complete its task. Then one of the thread - say thread1 will use thread2's results to final globally max element.
 ---
 
 #### 6. Consider a doubly linked list containing 1 million integers as node->data. A process P is created to replace the data in all nodes of the linked list with the squared of the integers. For example, if the list is: 2 4 5 7 8 9, Final list should be: 4 16 25 49 64 81. Assign the responsibility to the two threads so that threads can be independently executed on different processors of the system without having a need for any coordination.
@@ -45,6 +45,12 @@
 
 Since both threads are working on different sections of the list and the system has 2 CPUs, this operation would be **Parallel**.
 
+thread 1 can scan the element of the array from beginning to mid, and squaring each element of the array.
+
+thread 2 can scan the element of the array from end to mid and squaring each element of the array.
+
+Thus work of the two threads is non-overlapping and hence, threads can be executed in parallel on 2 CPUs.
+
 ---
 
 #### 7. Which of the following is/are true?
@@ -52,8 +58,7 @@ Since both threads are working on different sections of the list and the system 
 - **1. T1 and T2 are said to be concurrent threads if they execute only 1 at a time on a uni-processor system**: True
 - **2. Very fast Context Switching creates an illusion to human as if concurrent threads are executing in parallel**: True
 - **3. Concurrency refers to things that appear to happen at the same time, But actually not!**: True
-- **4. Concurrency must ensure independent progression**: False. Independent progression is not necessarily required for concurrency; it is more related to parallelism where each thread can complete its task without waiting for the other. 
-
+- **4. Concurrency must ensure independent progression**: True
 ---
 
 I hope these answers help you in your preparation for interviews! 🌟
