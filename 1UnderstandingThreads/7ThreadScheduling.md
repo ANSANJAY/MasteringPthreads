@@ -27,10 +27,7 @@ The kernel or operating system schedules **threads**, not processes.
 - **Kernel Space**: Where the OS runs.
 - **User Space**: Where all applications run.
 
-### Diagram 🖼️
-- Process P1 has Threads T1 and T2.
-- Process P2 has Threads T3 and T4.
-
+  
 ---
 
 ## Scheduling Entities 🎯
