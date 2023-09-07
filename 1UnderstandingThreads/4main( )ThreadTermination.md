@@ -41,6 +41,42 @@
 pthread_exit(NULL);
 ```
 
+```C
+#include <pthread.h>
+#include <stdio.h>
+#include <unistd.h>
+
+void *childThreadFunc(void *arg) {
+    for (int i = 0; i < 5; i++) {
+        printf("Child thread working...\n");
+        sleep(1);
+    }
+    return NULL;
+}
+
+int main() {
+    pthread_t childThread;
+    pthread_create(&childThread, NULL, childThreadFunc, NULL);
+
+    printf("Main thread finishing...\n");
+    pthread_exit(NULL);  // This will exit the main thread but allow the child thread to continue.
+    
+    // The following line will not be executed.
+    printf("This line will not be printed.\n");
+    return 0;
+}
+```
+```bash
+[anamika@fedora missimissi]$ ./child 
+Main thread finishing...
+Child thread working...
+Child thread working...
+Child thread working...
+Child thread working...
+Child thread working...
+
+```
+
 ---
 
 ## Impact of Child Thread Termination 👶
