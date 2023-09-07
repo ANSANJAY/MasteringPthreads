@@ -24,7 +24,7 @@ The operating system allocates various resources to threads, such as:
 - CPU
 - Access to hardware
 
-Each thread can demand dynamic memory allocation using `malloc` and `clocks`.
+Each thread can demand dynamic memory allocation using `malloc` and `calloc`.
 
 The OS also schedules threads on the CPU. This involves a scheduling policy and possibly context-switching among multiple threads.
 
@@ -45,7 +45,7 @@ Every thread has its own separate and isolated life cycle. They:
 2. Live (Execute)
 3. Eventually Die
 
-**Exception**: If the main thread dies and was not terminated using `pthread_exit` API, all other threads will also be terminated.
+**Exception**: If the main thread dies and is not terminated using `pthread_exit` API, all other threads will also be terminated.
 
 ---
 
