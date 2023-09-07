@@ -45,9 +45,6 @@ This document discusses how virtual memory changes in a process when a new threa
 
 ---
 
-## Changes in Page Table 📑
-- This part is to be discussed further.
-
 > 📝 **Note**: Each thread's stack memory is separate and cannot be accessed by other threads. All other segments of the virtual address space are shared among the threads.
 
 # Interview Questions and Answers on Multithreading and Virtual Memory 🧵💾
